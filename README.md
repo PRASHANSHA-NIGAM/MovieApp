@@ -63,12 +63,11 @@ MovieApp/
 git clone https://github.com/PRASHANSHA-NIGAM/MovieApp.git
 cd MovieApp
 
-### 2. Install backend dependencies
+Install backend dependencies
 cd backend
 npm install
 
-### 3. Setup environment variables
-
+Setup environment variables
 Create a .env file in the backend folder:
 
 PORT=5000
@@ -76,5 +75,5 @@ MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 OMDB_API_KEY=your_omdb_api_key
 
-4. Run the server
+Run the server
 npm start
