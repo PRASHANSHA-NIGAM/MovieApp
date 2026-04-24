@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Search App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🎬 Movie Search App</h1>
+
+  <!-- Logout Button -->
+  <button onclick="logout()">Logout</button>
+
+  <!-- Search -->
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search movie...">
+    <button onclick="searchMovie()">Search</button>
+  </div>
+
+  <!-- Loader -->
+  <div id="loader" style="display:none;">Loading...</div>
+
+  <!-- Movies -->
+  <div id="movies"></div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modalData"></div>
+    </div>
+  </div>
+
+  <script>
+    // 🔐 AUTH CHECK (IMPORTANT)
+    const token = localStorage.getItem("token");
+
+    if (!token) {
+      alert("Please login first");
+      window.location.href = "login.html";
+    }
+
+    // 🚪 LOGOUT FUNCTION
+    function logout() {
+      localStorage.removeItem("token");
+      alert("Logged out");
+      window.location.href = "login.html";
+    }
+  </script>
+
+  <!-- Main JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
