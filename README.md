@@ -1,4 +1,4 @@
-# 🎬 Movie Search App (Full Stack)
+# 🎬 MovieApp (Full Stack)
 
 A full-stack movie web application that allows users to search movies, view details, and manage favorites with authentication.
 
