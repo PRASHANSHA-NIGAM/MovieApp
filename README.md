@@ -1,79 +1,136 @@
-# 🎬 Movie App (Full Stack)
+# 🎬 Movie Search App (Full Stack)
 
-A full-stack movie web application built with **Node.js, Express, MongoDB, and JWT authentication**, integrated with the **OMDb API** for dynamic movie search and favorites management.
+A full-stack movie web application that allows users to search movies, view details, and manage favorites with authentication.
 
 ---
 
 ## 🚀 Features
 
-- 🔐 User Authentication (Signup/Login) using JWT
-- 🎥 Search movies using OMDb API
-- ⭐ Add / Remove favorite movies
-- 👤 User-specific favorites stored in MongoDB
-- 📱 Responsive UI for all devices
-- ⚡ Fast and dynamic API-based movie fetching
+* 🔍 Search movies using OMDb API
+* 🎬 View movie posters, title, and year
+* 📄 Detailed movie info (rating, plot) in modal
+* ❤️ Add/remove favorites
+* 🔐 User authentication (Login/Signup with JWT)
+* 💾 Favorites stored in MongoDB (user-specific)
+* 🌐 Fully deployed (Frontend + Backend)
 
 ---
 
 ## 🛠️ Tech Stack
 
-**Frontend:**
-- HTML
-- CSS
-- JavaScript (or React if used)
+### Frontend
 
-**Backend:**
-- Node.js
-- Express.js
+* HTML
+* CSS
+* JavaScript
 
-**Database:**
-- MongoDB (Mongoose)
+### Backend
 
-**Authentication:**
-- JSON Web Token (JWT)
-- bcrypt.js for password hashing
+* Node.js
+* Express.js
 
-**API:**
-- OMDb API
+### Database
 
----
+* MongoDB (Atlas)
 
-## 📂 Project Structure
-MovieApp/
-│
-├── backend/
-│ ├── models/
-│ ├── routes/
-│ ├── middleware/
-│ └── server.js
-│
-├── frontend/
-│ ├── index.html
-│ ├── style.css
-│ └── script.js
-│
-└── README.md
+### Authentication
+
+* JWT (JSON Web Tokens)
+* bcrypt (password hashing)
 
 ---
 
-## ⚙️ Installation & Setup
+---
 
-### 1. Clone the repository
+## 📸 Screenshot
+
+<img width="1201" height="802" alt="image" src="https://github.com/user-attachments/assets/01cf96da-4c6a-48de-b81d-a7d1cbc9500b" />
+
+
+## ⚙️ Installation (Local Setup)
+
+### 1️⃣ Clone repository
+
 ```bash
-git clone https://github.com/PRASHANSHA-NIGAM/MovieApp.git
-cd MovieApp
+git clone https://github.com/YOUR-USERNAME/movie-app.git
+cd movie-app
+```
 
-Install backend dependencies
+---
+
+### 2️⃣ Backend setup
+
+```bash
 cd backend
 npm install
+```
 
-Setup environment variables
-Create a .env file in the backend folder:
+Create `.env` file:
 
-PORT=5000
+```env
 MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
-OMDB_API_KEY=your_omdb_api_key
+```
 
-Run the server
-npm start
+Run backend:
+
+```bash
+node server.js
+```
+
+---
+
+### 3️⃣ Frontend setup
+
+Just open:
+
+```bash
+index.html
+```
+
+---
+
+## 🔑 API Used
+
+* OMDb API → http://www.omdbapi.com/
+
+---
+
+## 📌 Folder Structure
+
+```
+movie-app/
+│── backend/
+│   ├── models/
+│   ├── routes/
+│   ├── server.js
+│
+│── index.html
+│── script.js
+│── style.css
+│── login.html
+│── signup.html
+│── favorites.html
+```
+
+---
+
+## 🧠 Learning Outcomes
+
+* Built full-stack application from scratch
+* Implemented authentication using JWT
+* Integrated third-party API (OMDb)
+* Managed state using localStorage & database
+* Deployed frontend & backend
+
+---
+
+## 👩‍💻 Author
+
+Prashansha Nigam
+GitHub: https://github.com/PRASHANSHA-NIGAM
+
+---
+
+## ⭐ Show your support
+
+If you like this project, give it a ⭐ on GitHub!
